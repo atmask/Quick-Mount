@@ -9,6 +9,6 @@ RUN apt-get update && \
     python3-dev \
     wget \
     curl \
-    vim \
+    vim
 
 ENTRYPOINT ["sleep", "inifinity"]
