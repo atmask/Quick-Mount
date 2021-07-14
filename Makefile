@@ -11,10 +11,7 @@ container:
 
 mount:
 	echo "Running ${IMGAE} image with ${dir mounted}. Enjoy your clean work station :)"
-	docker run -d \
-	--name ${IMAGE} \
-	--mount type=bind,source=${dir},target=/app\
-	${IMAGE}
+	docker run -d --name ${IMAGE} --mount type=bind,source=${dir},target=/app ${IMAGE}
 
 entry:
 	echo "Entering work station"
