@@ -2,15 +2,15 @@ IMAGE = quick-mount
 
 
 build:
-	echo "Building ${IMGAE} image"
+	echo "Building ${IMAGE} image"
 	docker build -t ${IMAGE} .
 
 container:
-	echo "Running ${IMGAE} image. Enjoy your clean work station :)"
+	echo "Running ${IMAGE} image. Enjoy your clean work station :)"
 	docker run -d --name ${IMAGE} ${IMAGE}
 
 mount:
-	echo "Running ${IMGAE} image with ${dir mounted}. Enjoy your clean work station :)"
+	echo "Running ${IMAGE} image with ${dir mounted}. Enjoy your clean work station :)"
 	docker run -d --name ${IMAGE} --mount type=bind,source=${dir},target=/app ${IMAGE}
 
 entry:
