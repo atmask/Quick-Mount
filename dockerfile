@@ -13,4 +13,4 @@ RUN apt-get update && \
     ffmpeg \
     youtube-dl
 
-ENTRYPOINT ["sleep", "inifinity"]
+ENTRYPOINT ["sleep", "infinity"]
